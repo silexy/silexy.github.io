@@ -1,13 +1,193 @@
-<html>
-    <head>
-            <style>
-                    h1 {color:green;}
-                    p {color:blue;}
-                    </style>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The beauty of Dutch painters</title>
+<meta charset="UTF-8">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color:beige;
+}
 
-<h1>Great!</h1>
-<p>Everything works!</p>
-<p>And changes come through!</p>
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  /*background: #1abc9c;*/
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg');
+  background-size: cover;
+  color: white;
+}
 
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.content_painter{margin: 10px;}
+.content_p {
+  margin:10px;
+  width: 400px;
+ /* float:left; */
+  }
+.picture_painter{
+  width: 200px;
+  float: left;
+  margin: 10px;
+}
+.content_table_personalia{
+  width:200px;
+  background-color:#eeeec3;
+  border-collapse: collapse;
+  /*float: left;*/
+  }
+
+.content_table_personalia td{ border: 5px solid beige}
+
+.gallerycontainer{
+  overflow:hidden;
+  }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Dutch Painters</h1>
+  <p>Showing the beauty of 17th century Dutch paintings</p>
+</div>
+
+<div class="navbar">
+  <a href="#rembrandt">Rembrandt</a>
+  <a href="#vermeer">Vermeer</a>
+  <a href="#vangogh">Van Gogh</a>
+  <a href="#" class="right">Contact</a>
+</div>
+
+<div class="content_painter" id="rembrandt">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" class=picture_painter>
+  <table class=content_table_personalia>
+    <tr><td>Name:</td><td>Rembrandt</td></tr>
+    <tr><td>Born:</td><td>	Rembrant Harmenszoon van Rijn 15 July 1606
+        Leiden, Dutch Republic (now the Netherlands)</td></tr>
+    <tr><td>Died:</td><td>	4 October 1669 (aged 63)
+        Amsterdam, Dutch Republic (now the Netherlands)</td></tr>
+  </table>
+  <p class=content_p>
+  Rembrandt Harmenszoon van Rijn: 15 July 1606[1] – 4 October 1669) was a Dutch draughtsman, painter and printmaker. An innovative and prolific master in three media,[3] he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history.[4] Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies. His contributions to art came in a period of great wealth and cultural achievement that historians call the Dutch Golden Age, when Dutch art (especially Dutch painting), although in many ways antithetical to the Baroque style that dominated Europe, was extremely prolific and innovative, and gave rise to important new genres. Like many artists of the Dutch Golden Age, such as Jan Vermeer of Delft, Rembrandt was also an avid art collector and dealer. 
+</p>
+
+<div class=gallerycontainer>
+<div class="gallery">
+    <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+  
+  <div class="gallery">
+    <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div> <!--gallerycontainter-->
+
+<!--Second painter------------------------------------------------------------------------------------->
+
+<div class="content_painter" id="vermeer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" class=picture_painter>
+    <table class=content_table_personalia>
+      <tr><td>Name:</td><td>Rembrandt</td></tr>
+      <tr><td>Born:</td><td>	Rembrant Harmenszoon van Rijn 15 July 1606
+          Leiden, Dutch Republic (now the Netherlands)</td></tr>
+      <tr><td>Died:</td><td>	4 October 1669 (aged 63)
+          Amsterdam, Dutch Republic (now the Netherlands)</td></tr>
+    </table>
+    <p class=content_p>
+    Rembrandt Harmenszoon van Rijn: 15 July 1606[1] – 4 October 1669) was a Dutch draughtsman, painter and printmaker. An innovative and prolific master in three media,[3] he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history.[4] Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies. His contributions to art came in a period of great wealth and cultural achievement that historians call the Dutch Golden Age, when Dutch art (especially Dutch painting), although in many ways antithetical to the Baroque style that dominated Europe, was extremely prolific and innovative, and gave rise to important new genres. Like many artists of the Dutch Golden Age, such as Jan Vermeer of Delft, Rembrandt was also an avid art collector and dealer. 
+  </p>
+  
+  <div class=gallerycontainer>
+  <div class="gallery">
+      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div> <!--gallerycontainter-->
+
+
+
+</div>
+</body>
 </html>
