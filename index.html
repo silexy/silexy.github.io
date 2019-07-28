@@ -15,7 +15,7 @@ body {
   padding: 80px;
   text-align: center;
   /*background: #1abc9c;*/
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg');
+  background-image: url('https://www.kidsweek.nl/sites/default/files/styles/node_image/public/Rijksmuseum%20SK-C-5%20Nachtwacht%20WEB.jpg?itok=JzEHOzbg');
   background-size: cover;
   color: white;
 }
@@ -51,17 +51,29 @@ body {
   background-color: #ddd;
   color: black;
 }
-.content_painter{margin: 10px;}
+
+/* content secion -------------------*/
+
+/* centre the content */
+.content{
+  width: 50%; margin: 0 auto;  
+}
+.content_painter{
+  margin: 10px;
+  }
+
 .content_p {
   margin:10px;
-  width: 400px;
+  width: 800px;
  /* float:left; */
   }
+
 .picture_painter{
   width: 200px;
   float: left;
   margin: 10px;
 }
+
 .content_table_personalia{
   width:200px;
   background-color:#eeeec3;
@@ -69,7 +81,11 @@ body {
   /*float: left;*/
   }
 
-.content_table_personalia td{ border: 5px solid beige}
+.content_table_personalia td{ 
+  border: 5px solid beige
+  }
+
+/* Gallery of pictures within content for painter */
 
 .gallerycontainer{
   overflow:hidden;
@@ -98,6 +114,9 @@ div.desc {
 
 </style>
 </head>
+
+
+
 <body>
 
 <div class="header">
@@ -112,14 +131,16 @@ div.desc {
   <a href="#" class="right">Contact</a>
 </div>
 
+<div class="content">
+
+<!-- First painter Rembrandt ------------------------------------------->  
 <div class="content_painter" id="rembrandt">
+  <h2>Rembrandt</h2>
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" class=picture_painter>
   <table class=content_table_personalia>
     <tr><td>Name:</td><td>Rembrandt</td></tr>
-    <tr><td>Born:</td><td>	Rembrant Harmenszoon van Rijn 15 July 1606
-        Leiden, Dutch Republic (now the Netherlands)</td></tr>
-    <tr><td>Died:</td><td>	4 October 1669 (aged 63)
-        Amsterdam, Dutch Republic (now the Netherlands)</td></tr>
+    <tr><td>Born:</td><td>Rembrant Harmenszoon van Rijn 15 July 1606 Leiden, Dutch Republic (now the Netherlands)</td></tr>
+    <tr><td>Died:</td><td>4 October 1669 (aged 63) Amsterdam, Dutch Republic (now the Netherlands)</td></tr>
   </table>
   <p class=content_p>
   Rembrandt Harmenszoon van Rijn: 15 July 1606[1] – 4 October 1669) was a Dutch draughtsman, painter and printmaker. An innovative and prolific master in three media,[3] he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history.[4] Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies. His contributions to art came in a period of great wealth and cultural achievement that historians call the Dutch Golden Age, when Dutch art (especially Dutch painting), although in many ways antithetical to the Baroque style that dominated Europe, was extremely prolific and innovative, and gave rise to important new genres. Like many artists of the Dutch Golden Age, such as Jan Vermeer of Delft, Rembrandt was also an avid art collector and dealer. 
@@ -148,39 +169,40 @@ div.desc {
   </div>
 </div> <!--gallerycontainter-->
 
-<!--Second painter------------------------------------------------------------------------------------->
+<!--Second painter Vermeer  ------------------------------------------->  
 
 <div class="content_painter" id="vermeer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" class=picture_painter>
+    <h2>Vermeer</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg" class=picture_painter>
     <table class=content_table_personalia>
-      <tr><td>Name:</td><td>Rembrandt</td></tr>
-      <tr><td>Born:</td><td>	Rembrant Harmenszoon van Rijn 15 July 1606
-          Leiden, Dutch Republic (now the Netherlands)</td></tr>
-      <tr><td>Died:</td><td>	4 October 1669 (aged 63)
-          Amsterdam, Dutch Republic (now the Netherlands)</td></tr>
+      <tr><td>Name:</td><td>Vermeer</td></tr>
+      <tr><td>Born:</td><td>Likely October 1632 Delft, Dutch Republic</td></tr>
+      <tr><td>Died:</td><td>Buried 15 December 1675 (aged 43) Delft, Dutch Republic</td></tr>
     </table>
     <p class=content_p>
-    Rembrandt Harmenszoon van Rijn: 15 July 1606[1] – 4 October 1669) was a Dutch draughtsman, painter and printmaker. An innovative and prolific master in three media,[3] he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history.[4] Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies. His contributions to art came in a period of great wealth and cultural achievement that historians call the Dutch Golden Age, when Dutch art (especially Dutch painting), although in many ways antithetical to the Baroque style that dominated Europe, was extremely prolific and innovative, and gave rise to important new genres. Like many artists of the Dutch Golden Age, such as Jan Vermeer of Delft, Rembrandt was also an avid art collector and dealer. 
+        Johannes Vermeer (October 1632 – December 1675) was a Dutch Baroque Period painter who specialized in domestic interior scenes of middle-class life. He was a moderately successful provincial genre painter in his lifetime but evidently was not wealthy, leaving his wife and children in debt at his death, perhaps because he produced relatively few paintings.
+        Vermeer worked slowly and with great care, and frequently used very expensive pigments. He is particularly renowned for his masterly treatment and use of light in his work.         
+        Vermeer painted mostly domestic interior scenes. "Almost all his paintings are apparently set in two smallish rooms in his house in Delft; they show the same furniture and decorations in various arrangements and they often portray the same people, mostly women."
   </p>
   
   <div class=gallerycontainer>
   <div class="gallery">
-      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Cinque Terre" width="600" height="400">
+      <a target="_blank" href="https://www.artsalonholland.nl/uploads/illustraties-groot/b9391662-806f-5296-9ec9-a69af9065ab3/3051381884/VERMEER-Johannes-Vermeer-De-astronoom-Louvre-Parijs.jpg">
+        <img src="https://www.artsalonholland.nl/uploads/illustraties-groot/b9391662-806f-5296-9ec9-a69af9065ab3/3051381884/VERMEER-Johannes-Vermeer-De-astronoom-Louvre-Parijs.jpg" alt="Cinque Terre" width="600" height="400">
       </a>
       <div class="desc">Add a description of the image here</div>
     </div>
     
     <div class="gallery">
-      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Forest" width="600" height="400">
+      <a target="_blank" href="https://www.artsalonholland.nl/uploads/illustraties-groot/b9391662-806f-5296-9ec9-a69af9065ab3/3051381884/VERMEER-Johannes-Vermeer-De-astronoom-Louvre-Parijs.jpg">
+        <img src="https://www.artsalonholland.nl/uploads/illustraties-groot/b9391662-806f-5296-9ec9-a69af9065ab3/3051381884/VERMEER-Johannes-Vermeer-De-astronoom-Louvre-Parijs.jpg" alt="Forest" width="600" height="400">
       </a>
       <div class="desc">Add a description of the image here</div>
     </div>
     
     <div class="gallery">
-      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg" alt="Northern Lights" width="600" height="400">
+      <a target="_blank" href="https://www.artsalonholland.nl/uploads/illustraties-groot/b9391662-806f-5296-9ec9-a69af9065ab3/3051381884/VERMEER-Johannes-Vermeer-De-astronoom-Louvre-Parijs.jpg">
+        <img src="https://www.artsalonholland.nl/uploads/illustraties-groot/b9391662-806f-5296-9ec9-a69af9065ab3/3051381884/VERMEER-Johannes-Vermeer-De-astronoom-Louvre-Parijs.jpg" alt="Northern Lights" width="600" height="400">
       </a>
       <div class="desc">Add a description of the image here</div>
     </div>
@@ -188,6 +210,8 @@ div.desc {
 
 
 
+</div>  <!--content painter Vermeer-->
 </div>
+
 </body>
 </html>
